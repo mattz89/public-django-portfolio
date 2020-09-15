@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:visited {
+    color: inherit;
+}
+p {
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+}
+h1 {
+    font-size: 3rem;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #333333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.container {
+    padding: 0 15vw;
+}
+#top-nav {
+    display: flex;
+    color: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    visibility: hidden;
+    padding: 0 15vw;
+    background-color: #222222;
+    height: 75px;
+}
+.sticky {
+    width: 100vw;
+    visibility: visible !important;
+    position: fixed;
+    top: 0;
+    background-color: #333333;
+}
+.social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none; 
+    align-items: center;
+    padding: 0;
+}
+.social li {
+    padding: .5rem;
+    font-size: 3.5rem;
+}
+.logo {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 5px;
+}
+.logo-border {
+    border: 2px #FFFFFF solid;
+    border-radius: 5px;
+}
+.logo-border:hover {
+    border: 2px #E32A5B solid;
+}
+.btn {
+    text-align: center;
+    width: 250px;
+    height: 35px;
+    background-color: #E32A5B;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-size: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.btn-nav {
+    text-align: center;
+    width: 130px;
+    height: 30px;
+    background-color: #E32A5B;
+    border-radius: 5px;
+    margin-left: 3rem;
+    font-size: 1.75rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.btn-text{
+    text-align: center;
+    width: 350px;
+    height: 35px;
+    background-color: #E32A5B;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-size: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.container-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+.headshot {
+    border-radius: 50%;
+}
+.welcome-text {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.highlight {
+    color: #E32A5B;
+}
+.learn-more {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+}
+.project {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hr-project {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.project-image {
+    border-radius: 10px;
+    border: 1px solid black;
+    max-width: 500px;
+    min-width: 400px;
+    flex: 1;
+    margin: 3rem;
+}
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    min-width: 300px;
+    flex: 1;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+.tags li {
+    font-size: 1.5rem;
+    border: 2px solid #E32A5B;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin-right: 1rem;
+}
+.testimonial {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.quote {
+    padding: 3rem;
+    min-width: 300px;
+    text-align: left;
+    flex: 1;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+.quote a{
+    color: #E32A5B;
+}
+.quote a:visited{
+    color: #E32A5B;
+}
+q::before {
+    content: open-quote;
+    font-size: 8rem;
+    line-height: .1rem;
+    margin-right: 1rem;
+    vertical-align: -3.5rem;
+}
+.section {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    padding: 3rem;
+    min-width: 300px;
+}
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.about-image {
+    max-width: 500px;
+    max-height: 300px;
+
+}
+.instagram-feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    max-height: 300px;
+    width: 100%;
+}
+.instagram-image{
+    width: 200px;
+    min-width: 100px;
+    height: 100%;
+}
+.textme {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #222222;
+    padding: 5rem;
+    border-radius: 10px;
+}
+.textmesection {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+input {
+    width: 350px;
+    margin-bottom: 1rem;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 2rem;
+    text-align: center;
+}
+textarea {
+    width: 350px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 2rem;
+}
+footer {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #top-nav {
+        padding: .5rem;
+        background-color: #222222;
+    }
+    .btn-nav {
+        margin-left: 1rem;
+    }
+    .learn-more {
+        visibility: hidden;
+    }
+    .landing {
+        height: 100vh;
+    }
+    .container {
+        padding: 0 3vw;
+    }
+    .project-description .btn {
+        min-width: 300px;
+    }
+    .project-image {
+        max-width: 300px;
+        min-width: 250px;
+    }
+    input {
+        width: 250px;
+    }
+    textarea {
+        width: 250px;
+    }
+    .btn-text {
+        width: 250px;
+    }
+}

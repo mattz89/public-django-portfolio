@@ -1,0 +1,196 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Meet Matt Z.</title>
+
+    <script src="https://kit.fontawesome.com/e442a36db5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container-landing">
+            <div class="landing">
+                <img class="headshot" width="140px" height="140px" src="{% static 'images/me.jpg' %}" alt="headshot">
+                <div class="welcome-text">Hi, I'm <span class="highlight">Matt</span>. Sales Pro Turned Dev.</div>
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/mattzenittini" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://www.instagram.com/matthewzenittini" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="https://github.com/mattz89" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/matthew-zenittini-61482466/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <a href="#textme"><div class="btn">Text Me</div></a>
+                <a href="#recent-projects"><div class="btn">Recent Projects</div></a>
+
+                <!-- Hides until scroll to this point -->
+                <header id="top-nav">
+                    <a href="#top"><div class="logo logo-border">MZ</div></a>
+                    <nav class="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/mattzenittini" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="https://www.instagram.com/matthewzenittini" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href="https://github.com/mattz89" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/matthew-zenittini-61482466/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <a href="#textme" class="btn-nav">Text Me</a>
+                        </ul>
+                    </nav>
+                </header>
+                <!-- End Hide -->
+
+            </div>
+            <a href="#about">
+                <div class="learn-more" id="recent-projects">
+                    <i class="fas fa-angle-down"></i>
+                    Learn More
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </a>
+        </div>
+
+        <main>
+            <div class="section" style="margin-top:10rem;">Projects</div>
+            <hr class="hr-project" style="margin-top:0;">
+            <div class="project">
+                <img class="project-image" src="{% static 'images/portfolio.png' %}" alt="Portfolio project">
+                <div class="project-description">
+                    <h1>Portfolio</h1>
+                    <ul class="tags">
+                        <li>2020</li>
+                        <li>Figma</li>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Twilio API</li>
+                    </ul>
+                    <p>This is the first project where I used Figma. It was fun to get familiar with, and I'll definitely be using it in the future. The backend is Django-powered for the Twilio texting feature. This is also my first flexbox based project (I can't believe I waited so long)!</p>
+                    <a href="#"><div class="btn"><i class="fab fa-github-alt"></i>&nbsp;View Code</i></div></a>
+                </div>
+            </div>
+            <hr class="hr-project">
+
+            <div class="project">
+                <img class="project-image" src="{% static 'images/canned.gif' %}" alt="Canned Email project">
+                <div class="project-description">
+                    <h1>Canned Email App</h1>
+                    <ul class="tags">
+                        <li>2020</li>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>HTML/CSS</li>
+                        <li>Heroku</li>
+                        <li>Git</li>
+                    </ul>
+                    <p>"Canned." was born from my current job. We have a tech support canned email page that sometimes has issues, so I decided to remake it as a side-project. Anyone can view emails, but to add / edit / delete emails, you must be logged in. My biggest take-away here was when the MVT framework started to really click for me.</p>
+                    <a href="http://canned.playstowin.com" target="_blank"><div class="btn">View Site</div></a>
+                </div>
+            </div>
+            <hr class="hr-project">
+
+            <div class="project">
+                <img class="project-image" src="{% static 'images/bmi.gif' %}" alt="BMI Calculator Project">
+                <div class="project-description">
+                    <h1>BMI Calculator</h1>
+                    <ul class="tags">
+                        <li>2020</li>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                        <li>Wordpress</li>
+                    </ul>
+                    <p>I was contracted on UpWork to make a simple BMI calculator that worked on a Wordpress page. It needed to do both Metric and Imperial calculations. This was fun as I learned more about using JavaScript functions to manipulate the DOM with conditional formatting.</p>
+                    <a href="https://www.bmiguide.com" target="_blank"><div class="btn">View Site</div></a>
+                </div>
+            </div>
+            <hr class="hr-project">
+
+            <div class="project">
+                <img class="project-image" src="{% static 'images/portalPage.gif' %}" alt="KioWare Android Portal Page">
+                <div class="project-description">
+                    <h1>KioWare Android Portal</h1>
+                    <ul class="tags">
+                        <li>2019</li>
+                        <li>HTML/CSS</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>KioWare API</li>
+                    </ul>
+                    <p>My work's kiosk software has an API that allows users to display and launch Android applications in the web browser. I created this in my free time to use their API and be able to send it to customers to assist with their own implementations. Note: This only works on Android running KioWare.</p>
+                    <a href="https://github.com/mattz89/KioWarePortalPage/blob/master/flatPortal.html" target="_blank"><div class="btn"><i class="fab fa-github-alt"></i>&nbsp;View Code</div></a>
+                </div>
+            </div>
+            <hr class="hr-project">
+
+            <div class="section">Freelance Testimonials</div>
+            <div class="testimonial">
+                <div class="quote">
+                    <h2>Setup Wordpress Blog</h2>
+                    <q>Can't say enough good things about Matthew, he understands how to communicate and make you feel like you are in good hands. (Because you are) Always available and willing to work with you - i had an excellent experience. 100% recommend.</q>
+                    <br><br>-Nicole Lupu
+                    <br><a href="#">Coming Soon</a>
+                </div>
+                <div class="quote">
+                    <h2>Style Contact Form</h2>
+                    <q>Great communication, swiftness, enthusiasm, and helpfulness. Matthew genuinely cares about the job being done right, rather than just completing the task. Hire with confidence.</q>
+                    <br><br>-Cathryn Hahn
+                    <br><a href="https://www.trifectahouseboats.com/" target="_blank">Trifecta Houseboats</a>
+                </div>
+                <div class="quote">
+                    <h2>Calculator for Wordpress</h2>
+                    <q>Matthew was a pleasure to work with. He is very skilled, and turned our wire-frame into a functioning calculator in a matter of hours. He contributed ideas to make it even better as well. Would definitely hire Matthew again!</q>
+                    <br><br>-Josh Wilkinson
+                    <br><a href="https://www.bmiguide.com" target="_blank">BMI Guide</a>
+                </div>
+            </div>
+            <hr class="hr-project" id="about">
+            <div class="about-container">
+                <div class="about">
+                    <h1>About</h1>
+                    <p>I started "developing" back in middle school at the end of the school day in "HTML Club". After high school, I ended up taking a different path with a full time job selling cars. A few years later, I was selling cable and solar door to door. I ended up selling door to door for the next 5 years.</p>
+                    <p>During my time in sales, I went to college and graduated with an Associates Degree in Web Application Development. This lead to my first (and current) 'technical' job as support and QA for KioWare.com.</p>
+                    <div class="instagram-feed" id="textme">
+                        <img class="instagram-image" src="{% static 'images/1.jpg' %}" alt="Selfie in the Mountains">
+                        <img class="instagram-image" src="{% static 'images/3.jpg' %}" alt="Picture from our photobooth :)!">
+                        <img class="instagram-image" src="{% static 'images/2.jpg' %}" alt="Lindsay, llama, and myself.">
+                    </div>
+                </div>
+                <div class="textmesection">
+                    <form method="post" class="textme" action="{% url 'textmatt' %}">{% csrf_token %}
+                        <div class="section">Text Matt:</div>
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" name="fname" required>
+                        <label for="phone">Textback #:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <button type="submit" class="btn-text">Send Text</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="hr-project">
+        </main>
+
+        <footer>
+            Copyright 2020 Matthew Zenittini. All Rights Reserved.
+        </footer>
+    </div>
+    <script>
+        window.onscroll = function() {stickyNav()};
+        
+        var navbar = document.getElementById("top-nav");
+        var sticky = navbar.offsetTop;
+        
+        function stickyNav() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+Frontend:
+x About text phrasing
+x Spacing on all text: Justify --> Left
+x Phone right margin messed up
+x Portfolio Description text needs min width
+x Left align label text on form
+x Project image not centering iOS
+x iOS has horizontal scroll that it should not
+x fix view page buttons mobile
+x add project gif or video x2
+x Fix Recent Projects button
+x make text more readable
+x Add portal page project
+
+Backend:
+x Site needs "Djangofied"
+x Text Matt needs implemented
+x Instagram feed needs implemented
+-Projects need database for easy future adding (maybe)
+
+Later Frontend:
+-JavaScript animations
+-CSS entry animations
+-CSS hover animations
+
+
+
+Fix Canned:
+-Add auto-login button
